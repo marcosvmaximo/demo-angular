@@ -1,0 +1,45 @@
+# Arquivos de compilação
+/dist/
+/tmp/
+/out-tsc/
+
+# Dependências npm
+/node_modules/
+
+# Arquivos de configuração específicos do usuário
+/.angular-cli.json
+/.vscode
+/.idea
+
+# Arquivos de log
+/*.log
+
+# Arquivos temporários
+*.swp
+
+# Outros arquivos gerados durante o desenvolvimento
+/.DS_Store
+/.env
+/.env.local
+/.env.development.local
+/.env.test.local
+/.env.production.local
+
+# Arquivos de compilação e logs do jest
+/jest-puppeteer.config.js
+/jest.config.js
+/test-config.json
+/setupTests.js
+/coverage/
+
+# Cache de Yarn
+/.pnp
+/.pnp.js
+.pnpify
+
+# Cache de TSLint
+/tslint.log
+
+# Arquivos gerados pelo Editor
+/.idea
+/*.iml

@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row justify-content-center align-items-center vh-100">
+    <div class="col-md-4">
+      <form [formGroup]="formPet" class="row">
+        <div class="mb-3">
+          <label for="nome" class="form-label">Nome do Animal: </label>
+          <input type="text" formControlName="nome" class="form-control" id="nome">
+        </div>
+        <div class="mb-3">
+          <label for="porte" class="form-label">Porte: </label>
+          <input type="text" formControlName="porte" class="form-control" id="porte">
+        </div>
+        <div class="mb-3">
+          <label for="descricao" class="form-label">Descrição: </label>
+          <input type="text" formControlName="descricao" class="form-control" id="descricao">
+        </div>
+
+        <button type="submit" (click)="adicionar()" class="btn btn-primary mt-3 text-center">Adicionar</button>
+      </form>
+    </div>
+  </div>
+</div>
