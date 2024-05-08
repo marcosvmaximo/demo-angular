@@ -15,10 +15,6 @@ public class User : IdentityUser<int>
     [StringLength(100, ErrorMessage = "O e-mail não pode ter mais de 100 caracteres.")]
     public string Email { get; set; }
 
-    [Required(ErrorMessage = "A senha é obrigatória.")]
-    [StringLength(50, ErrorMessage = "A senha não pode ter mais de 50 caracteres.")]
-    public string Password { get; set; }
-
     [Required(ErrorMessage = "O telefone é obrigatório.")]
     [Phone(ErrorMessage = "O telefone não está em um formato válido.")]
     [StringLength(14, ErrorMessage = "O telefone não pode ter mais de 14 caracteres.")]

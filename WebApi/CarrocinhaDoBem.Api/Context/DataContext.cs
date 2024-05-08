@@ -10,11 +10,11 @@ public class DataContext : DbContext
         
     }
     
-    public DbSet<Animal> Animals { get; set; }
-    public DbSet<Adoption> Adoptions { get; set; }
-    public DbSet<Donation> Donations { get; set; }
-    public DbSet<Institution> Institutions { get; set; }
-    public DbSet<Sponsorship> Sponsorships { get; set; }
+    // public DbSet<Animal> Animals { get; set; }
+    // public DbSet<Adoption> Adoptions { get; set; }
+    // public DbSet<Donation> Donations { get; set; }
+    // public DbSet<Institution> Institutions { get; set; }
+    // public DbSet<Sponsorship> Sponsorships { get; set; }
     public DbSet<User> Users { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)

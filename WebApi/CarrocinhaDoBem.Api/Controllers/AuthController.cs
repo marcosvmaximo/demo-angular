@@ -87,7 +87,7 @@ public class AuthController : ControllerBase
         if (!ModelState.IsValid)
             return BadRequest(ModelState);
 
-        var user = await _userManager.FindByEmailAsync(loginRequest.Email);
+        var user = await _context.Users.FirstOrDefaultAsync(x => x.Email == loginRequest.Email);
         if (user == null)
         {
             ModelState.AddModelError("Email", "Usuário não encontrado.");
@@ -120,7 +120,6 @@ public class AuthController : ControllerBase
         {
             UserName = userRequest.UserName,
             Email = userRequest.Email,
-            Password = userRequest.Password,
             Address = "",
             Avatar = new byte[1],
             Phone = "",
